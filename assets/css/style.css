@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+:root {
+  font-size: 10px;
+  --color-bg: rgb(217, 233, 233);
+  --primary-color: rgb(15, 31, 31);
+  --primary-color-ligth: rgb(6, 80, 80);
+  --secondy-color: rgb(37, 228, 228);
+
+}
+
+body {
+  background-color: var(--color-bg);
+}
+
+.app{
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Space Mono", monospace;
+  color: white;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 40rem;
+  min-height: 30rem;
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: var(--primary-color);
+ 
+
+}
+.title{
+  font-size: 3rem;
+  font-style: italic;
+}
+.relogio{
+  font-size: 6rem;
+}
+.buttons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.relogio{
+  align-self: center;
+}
+button{
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  background-color: var(--secondy-color);
+  /* color: white; */
+}
+
+button:hover{
+  background-color: var(--primary-color-ligth);
+  color: white;
+}
+
+.pausado{
+  color: red;
+}
